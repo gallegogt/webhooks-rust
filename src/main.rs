@@ -17,12 +17,17 @@ fn webhooks() -> &'static str {
     "Hello, world!, webhooks"
 }
 
+#[get("/")]
+fn index() -> &'static str {
+    "Prueba Rocket.rs en heroku "
+}
+
 fn main() {
     let config = Config::build(Environment::active().unwrap())
         .port(get_server_port())
         .unwrap();
 
     rocket::custom(config, true)
-        .mount("/", routes![webhooks])
+        .mount("/", routes![webhooks, index])
         .launch();
 }
