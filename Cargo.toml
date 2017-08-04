@@ -1,5 +1,5 @@
 [package]
-name = "webhooks-zapier"
+name = "webhooks-rust"
 version = "0.1.0"
 authors = ["Yolier Galan Tasse <gallegogt@gmail.com>"]
 
@@ -11,6 +11,9 @@ authors = ["Yolier Galan Tasse <gallegogt@gmail.com>"]
 # version of Cargo.
 unstable = []
 
+[[bin]]
+name = "webhooks"
+path = "src/main.rs"
 
 [dependencies]
 rocket = "0.3.0"
