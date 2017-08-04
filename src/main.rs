@@ -14,7 +14,7 @@ fn get_server_port() -> u16 {
 
 #[get("/webhooks")]
 fn webhooks() -> &'static str {
-    "Hello, world!"
+    "Hello, world!, webhooks"
 }
 
 fn main() {
