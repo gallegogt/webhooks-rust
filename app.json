@@ -1,0 +1,11 @@
+{
+  "name": "Ejemplo Zapier Rust Webhook",
+  "description": "Web server creado con Rocket.rs",
+  "repository": "https://github.com/gallegogt/webhooks-rust.git",
+  "success_url": "/webhooks",
+  "keywords": ["rust", "rocket.rs"],
+  "website": "",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/emk/heroku-buildpack-rust.git"
+  }
+}
