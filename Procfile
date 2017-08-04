@@ -1,1 +1,1 @@
-web: ./target/release/webhooks
+web: ROCKET_ENV=stage ROCKET_PORT=$PORT ./target/release/webhooks
